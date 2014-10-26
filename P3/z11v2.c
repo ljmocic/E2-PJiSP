@@ -1,7 +1,6 @@
 #include<stdio.h>
 #define MAX 30
 //Od originalnog se razlikuje samo po tome sto je radjen preko funkcija i malo pokazivaca.
-
 void menjaj(float *a,float *b)
 {
     float t;
