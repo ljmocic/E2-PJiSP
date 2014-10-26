@@ -1,24 +1,6 @@
 #include<stdio.h>
 #define MAX 30
 
-<<<<<<< HEAD
-=======
-void menjaj(float *a,float *b)
-{
-    float t;
-    t=*a;
-    *a=*b;
-    *b=t;
-}
-void sort(float *a,int n){
-    int i,j;
-    for(i=0;i<n-1;i++)
-        for(j=i+1;j<n;j++)
-            if(*(a+i)>*(a+j))
-                menjaj(a+i, a+j);
-}
-
->>>>>>> origin/master
 int main()
 {
     float x[MAX],t;
