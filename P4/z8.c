@@ -3,11 +3,15 @@
 
 int sumacif(int n)
 {
-	int sum;
-	if ((n>=0)&&(n<10))return n;
-	else {
-		sum=n%10+sumacif(n/10);
-		return sum;
+	if (n<0) sumacif(-n);
+	else
+	{
+		int sum;
+		if (n<10) return n;
+		else {
+			sum=n%10+sumacif(n/10);
+			return sum;
+		}
 	}
 }
 int main(){
