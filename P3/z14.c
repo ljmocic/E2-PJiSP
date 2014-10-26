@@ -8,8 +8,8 @@ int main(){
 	scanf("%d",&n);
 	for(i=0;i<n;i++){
 		scanf(" %c",&C[i]);
-		if(isalpha(C[i])){
-			A[q]=C[i];
+		if(isalpha(C[i])){			//moglo se resiti i sa uslovom ((C[i]>'A')&&(C[i]<'Z'))||((C[i]>'a')&&(C[i]<'z'))
+			A[q]=C[i];			//jedina prednost je da ne mora onda ctype.h bibilioteka
 			q++;
 		};
 	}
