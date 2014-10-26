@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(){
-    int x1,y1,z1,x2,y2,z2,x3,y3,z3;
+    int x1,y1,x2,y2,x3,y3;
     float P,a,b,c,s;
     printf("Unesite koordinate tacake x: \n");
     scanf("%d",&x1);
