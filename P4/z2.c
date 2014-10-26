@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 void prestupna(int n, int m){
-    for(n;n<=m;n++)if(n%4==0 && (n%400==0 || n%100!=0))printf("%d\n", n);
+    for(n;n<=m;n++)if(n%4==0) && (n%400==0 || n%100!=0))printf("%d\n", n);
 }
 
 int main(){
