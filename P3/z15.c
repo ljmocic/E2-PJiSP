@@ -15,7 +15,7 @@ int main()
     do {
         printf("Upisite koliko clanova zelite niz da sadrzi. MAX je 20 \n");
         scanf("%d", &brojClanova);
-    } while (brojClanova > 20); /// Ova petlja se ponavlja sve dok korisnik ne ispostuje pravilo koje smo zadali, da niz moze imati MAX 20 elementa
+    } while (brojClanova <=0 || brojClanova > MAX); /// Ova petlja se ponavlja sve dok korisnik ne ispostuje pravilo koje smo zadali, da niz moze imati MAX 20 elementa
 
    for (i = 0; i < brojClanova; i++){
     printf("Upisite %d. clan niza: ", i);
