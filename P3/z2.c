@@ -11,7 +11,7 @@
     scanf("%d", &c);
     if(c==1)for(i=1;i<=b;i++)R=R+a;
     if(c==2){
-            while(a>b){
+            while(a>=b){
             a=a-b;
             R++;
         }
