@@ -16,6 +16,7 @@ int main()
       pom*=(i+j+1);
     }
     S+=pom;
+    pom=1;
   }
   
   printf("Suma je:$d",S);
