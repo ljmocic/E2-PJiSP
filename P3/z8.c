@@ -1,25 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-  int n, S=0;      
-  int i,j;
-  int pom=1;
-  
-  printf("Unesite broj n:");
-  scanf("$d",&n);
-  
-  for(i=1;i<n;i++)          //u ovoj petlji sabirmo n sabiraka
-  {
-    for(j=0;j<i;j++)        //u ovoj petlji trazimo i-ti sabirak
+    int n, i, j, s, k;
+    do
     {
-      pom*=(i+j+1);
+        printf("Unesi n: ");
+        scanf("%i", &n);
     }
-    S+=pom;
-  }
-  
-  printf("Suma je:$d",S);
-  
-  return 0;
-  
+        while(n<0);
+    s=0;
+    for(i=1;i<=n;i++){
+        k=1;
+        for(j=0;j<=i;j++){
+            k*=(i+j);
+        }
+        s+=k;
+    }
+    printf("\n%i", s);
+    return 0;
 }
