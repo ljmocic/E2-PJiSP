@@ -35,12 +35,18 @@ int main()
 
 int main ()
 {
+  
+  int i,n;
+  printf("Unesi broj clanova niza : ");
+  scanf("%d",&n);
+  int niz[n];
+  
 
-int hex;
+  printf("Unesi redom hexadecimalne brojeve: \n");
+  for (i=0;i<n;i++){
+  scanf ("%x",&niz[i]);
+  printf(" = %d \n",niz[i]);
+}
 
-printf("Unesi hexadecimalan broj: ");
-scanf ("%x",&hex);
-printf("%x je u decimalnom zapisu %d",hex,hex);
-
-return 0;
+  return 0;
 }
