@@ -29,3 +29,18 @@ int main()
     return 0;
 }
 
+
+//verzija 2
+#include <stdio.h>
+
+int main ()
+{
+
+int hex;
+
+printf("Unesi hexadecimalan broj: ");
+scanf ("%x",&hex);
+printf("%x je u decimalnom zapisu %d",hex,hex);
+
+return 0;
+}
