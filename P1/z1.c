@@ -7,7 +7,7 @@ int main()
     float c=5.0;
     float s,P;
     s=(a+b+c)/2;
-    P=sqrt( s*(s-a)*(s-b)*(s-c));
+    P=sqrt(s*(s-a)*(s-b)*(s-c));
     printf("P = %f\n",P);
     return 0;
 }
