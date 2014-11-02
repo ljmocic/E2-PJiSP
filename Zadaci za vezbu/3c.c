@@ -13,7 +13,7 @@ int main()
         printf("Unesi realan broj k (k mora biti manje od n): ");
         scanf("%d",&k);
     }while(k>n);
-    for (i=1;i<=n;i++){
+    for (i=1;i<=k;i++){
         S+=pow(-1,k+1)/(n+i*k);
     }
     printf("Suma je %.3f ",S);
