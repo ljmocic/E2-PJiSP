@@ -1,21 +1,12 @@
 #include<stdio.h>
-int main()
-{
-	int n,i,pom=2;
-	double rez;
-	do{
-	
-	printf("Unesi pozitivan realan broj : ");
-	scanf("%d",&n);
-	}   
-	while(n<1);
-	
-	for(i=1;i<n;i++)
-	pom=pom*2;
-	
-	rez=(double)(3+2*n)/(double)pom;
-	
-	printf("Resenje ovog cuda je : %.2lf  \n",rez);
-	return 0;
-		
+#include<math.h>
+
+int main(){
+    float S=0;
+    int i,n;
+    printf("Unesite n: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)S+=(3+2*i)/pow(2,i);
+    printf("Suma je: %0.2f", S);
+    return 0;
 }
