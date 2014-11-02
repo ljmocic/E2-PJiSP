@@ -7,6 +7,6 @@ int main(){
     printf("Unesite n: ");
     scanf("%d",&n);
     for(i=1;i<=n;i++)S+=(3+2*i)/pow(2,i);
-    printf("Suma je: %0.2f", S);
+    printf("Suma je: %.2f", S);
     return 0;
 }

@@ -1,27 +1,22 @@
 #include<stdio.h>
+#include<math.h>
 
-int main ()
+int main()
 {
-	int n,k,i;
-	double s=10;
-	do{
-
-		do{
-			printf("Unesi prirodan broj n : ");
-			scanf("%d",&n);
-		} while (n<1);
-		
-		do{
-			printf("Unesi prirodan broj k : ");
-			scanf("%d",&k);
-		} while(k<1);
-	} while(k>=n);
-	
-	for(i=0;i<=n;i++)
-	s=s+(1/(double)((k+i)*(k+i)));
-	
-	printf("Resenje ovoga je : %.3lf",s);
-	
-	return 0;
-	
+    int n,i,j,k;
+    float S=10.0,P=0.0;
+    do{
+    printf("Unesi pozitivan ceo broj: ");
+    scanf("%d",&n);
+    }while(n<1);
+    do{
+        printf("Unesi realan broj k (k mora biti manje od n): ");
+        scanf("%d",&k);
+    }while(k>n);
+    for (k;k<=n;k++){
+        P=pow(k,2);
+        S+=1/(float)P;
+    }
+    printf("Suma je %.3f ",S);
+    return 0;
 }

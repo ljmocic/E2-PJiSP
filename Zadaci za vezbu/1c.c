@@ -1,25 +1,18 @@
-//racunanje po formuli : ((-1)^n+1)*(3n)!
 #include<stdio.h>
 #include<math.h>
+
+int fakt(int n){
+    int i,R=1;
+    for(i=1;i<=n;i++)R=R*i;
+    return R;
+}
 int main()
 {
-	int n,pom=1,i,pom2;
-	double s;
-	do {
-		printf("Unesi pozitivan ceo broj n : ");
-		scanf("%d",&n);
-	}while(n<1);
-	
-	pom=3*n;
-	pom2=pom;
-	
-	for(i=1;i<=pom2;i++)   //racunanje (3n)!
-		pom=pom*i;
-	
-	s=pow((-1),(double)(n+1))*pom;
-	
-	printf("Resenje je : %.2lf ",s);
-	
-	return 0;
-	
+    int n,i,c=-1;
+    float S=0.0;
+    printf("Unesi pozitivan ceo broj : ");
+    scanf("%d",&n);
+    for (i=1;i<=n;i++)S+=pow(c,i+1)*fakt(3*i);
+    printf("Suma je %.3f ",S);
+    return 0;
 }

@@ -1,28 +1,29 @@
-//ovo je jako glup program da gljuplji ne moze da bude
 #include<stdio.h>
 #include<math.h>
+
+int fakt(int n){
+    int i,R=1;
+    for(i=1;i<=n;i++)R=R*i;
+    return R;
+}
+
+
 int main()
 {
-	int i,n,pom=1,pom2;
-	double x,s;
-	
-	do{
-		printf("Unesi prirodan broj n :");
-		scanf("%d",&n);
-	}while (n<1);
-	
-	printf("Unesi realan broj x : ");
-	scanf("%lf",&x);
-	
-	pom2=2*n+1;
-	
-	
-	for(i=1;i<=pom2;i++)
-	pom=pom*i;    // = (2n+1)!
-	
-	s=(pow((-1) , (double)(n)) / (double)pom) * (pow(x,(double)(pom)));
-	
-	printf("Resenje je : %.4lf   \n",s);
-	return 0 ;  
-	
+    int n,i,j,k;
+    float x,S=0.0,P1=0.0,P2=0.0;
+    printf("Unesi pozitivan ceo broj : ");
+    scanf("%d",&n);
+    printf("Unesi realan broj x: ");
+    scanf("%f",&x);
+    for (i=1;i<=n;i++){
+        for (j=1;j<=n;j++){
+                k=2*i+1;
+                P1=pow(-1,i)*pow(x,k);
+                P2=fakt(2*i-1);
+        }
+        S+=P1/(float)P2;
+    }
+    printf("Suma je %.3f ",S);
+    return 0;
 }

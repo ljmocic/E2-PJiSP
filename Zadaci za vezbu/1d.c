@@ -1,26 +1,23 @@
 #include<stdio.h>
 #include<math.h>
+
+int fakt(int n){
+    int i,R=1;
+    for(i=1;i<=n;i++)R=R*i;
+    return R;
+}
+
+
 int main()
 {
-	int i,n,n_fak=1;
-	double pom=0.0,s;
-
-	do{
-		printf("Unesi n>2 : ");
-		scanf("%d",&n);
-	}
-	while(n<2);
-	
-	for (i=2;i<=(n+1);i++)
-		pom=pom+(1/(double)i);
-	
-	for(i=1;i<=n;i++)
-		n_fak=n_fak*i;
-	
-	s=(double)(n_fak)/pom;
-	
-	printf("Resenje je : %.2lf ",s);
-	
-	return 0;
+    int n,i,j;
+    float S=0.0,P=0.0;
+    printf("Unesi pozitivan ceo broj : ");
+    scanf("%d",&n);
+    for (i=1;i<=n;i++){
+        for (j=1;j<=n;j++)P+=1/(float)(j+1);
+        S+=fakt(i)/P;
+    }
+    printf("Suma je %.3f ",S);
+    return 0;
 }
-	

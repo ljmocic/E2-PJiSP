@@ -3,25 +3,19 @@
 
 int main()
 {
-	int i,n,k;
-	double s=0.0;
-	
-	do{
-
-		do{
-			printf("Unesi prirodan broj n : ");
-			scanf("%d",&n);
-		} while (n<1);
-		
-		do{
-			printf("Unesi prirodan broj k : ");
-			scanf("%d",&k);
-		} while(k<1);
-	} while(k>=n);
-
-	for(i=0;i<=k;i++)
-		s=s+pow((-1),(double)(k+1))*1/(double)(n+i*k);
-		
-	printf("Najzad,resenje ovoga je : %.2lf",s);
-	return 0;
+    int n,i,j,k;
+    float S=0.0,P=0.0;
+    do{
+    printf("Unesi pozitivan ceo broj: ");
+    scanf("%d",&n);
+    }while(n<1);
+    do{
+        printf("Unesi realan broj k (k mora biti manje od n): ");
+        scanf("%d",&k);
+    }while(k>n);
+    for (i=1;i<=n;i++){
+        S+=pow(-1,k+1)/(n+i*k);
+    }
+    printf("Suma je %.3f ",S);
+    return 0;
 }
