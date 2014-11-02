@@ -4,7 +4,7 @@
 int main()
 {
     int n,i,j,k;
-    float S=1.0,P=0.0;
+    float S,P=0.0;
     do{
     printf("Unesi pozitivan ceo broj: ");
     scanf("%d",&n);
@@ -13,8 +13,9 @@ int main()
         printf("Unesi realan broj k (k mora biti manje od n): ");
         scanf("%d",&k);
     }while(k>n);
+    S=k;
     for (i=0;i<=n;i++){
-        S=S*(k+i*n);
+        S*=(k+i*n);
     }
     printf("Suma je %.3f ",S);
     return 0;
