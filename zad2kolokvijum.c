@@ -81,7 +81,7 @@ void negativeArray(int array[], int size)
 
 
 /// glavna funkcija main
-void main()
+int main()
 {
     int size, array[MAX], i, neg = 0, poz = 0;
 
@@ -103,5 +103,7 @@ void main()
         negativeArray(array, size);
 
     ispisiNiz(array, size);
+    
+    return 0;
 
 }
