@@ -87,7 +87,7 @@ int main()
 
     do
     {
-        printf("Unesite velicinu niza. MAX je 30 \n");
+        printf("Unesite velicinu niza. MAX je 20 \n");
         scanf("%d", &size);
     } while((size < 0) || (size > MAX));
 
