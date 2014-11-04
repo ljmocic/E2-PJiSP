@@ -1,3 +1,9 @@
+/*2. Niz (maks 20). Ucitaj niz. 
+Da li ima vise poz ili neg brojeva u nizu. 
+Ako ima vise poz onda sve neg pretvoriti u poz.
+Obrnuto, sve poz u neg. Ako ih ima jednako onda ostavi isti niz.
+Ispisi niz.*/
+
 /// Verzija zadatka koja nije za maks bodova (bez funkcija i prenosa po referenci)
 
 #include <stdio.h>
