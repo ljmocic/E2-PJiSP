@@ -9,7 +9,7 @@ koje ce gledati koliko ima poz i neg u nizu. */
 
 
 /*Komentar: Ovaj zadatak je uradjen za MAX bodova, 
-dakle sve je pisano u funkcijama! ( Da nije bilo bi 200 redova...)
+dakle sve je pisano u funkcijama! ( Da nije, bilo bi 200 redova...)
 Proucite prenosenje vrednosti po referenci kako bi mogli da 
 razumete program*/
 
