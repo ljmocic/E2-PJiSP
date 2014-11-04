@@ -10,7 +10,7 @@ int main(){
     }
     for(i=0;i<n;i++){
         S+=t[i];
-        printf("%d kupac ce cekati %d sekundi\n",i,S);
+        printf("%d kupac ce cekati %d sekundi\n",i+1,S);
     }
     return 0;
 }
