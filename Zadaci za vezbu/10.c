@@ -1,28 +1,19 @@
-#include <stdio.h>
-int main()
-{
-	int i,n,suma=0;
-	
+#include<stdio.h>
+#define MAX 30
+
+int main(){
+	float A[MAX],S=0;
+	int n,i;
 	do{
-			printf("Unesi broj elemenata niza : ");
-			scanf("%d",&n);
+	printf("Unesite broj elemenata niza: ");
+	scanf("%d", &n);
+	}while(n<1);
+	printf("Unesite clanove niza: \n");
+	for(i=0;i<n;i++){
+		printf("A[%d]=", i);
+		scanf("%f", &A[i]);
+		if(A[i]>0)S+=A[i];
 	}
-	while(n<1);
-	
-	int A[n];
-	
-	printf("\nUnesi redom clanove niza : \n");
-	for(i=0;i<n;i++)
-	{
-		printf("A[%d] = ",i);
-		scanf("%d",&A[i]);
-		
-		if (A[i]>0)
-			suma+=A[i];
-	}
-	
-	printf("\nSuma svih pozitivnih brojeva je : %d",suma);
-	
+	printf("Suma svih pozitivnih clanova niza je: %.2f\n", S);
 	return 0;
-	
 }
