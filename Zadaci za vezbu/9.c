@@ -1,37 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
+#define MAX 30
 
-int main() {
-	int i, j, n;
-	int m = 1;
-	
-	printf("Unesi dužinu niza: ");
+int main(){
+	float A[MAX],S=0;
+	int n,i,j,k=0,B[MAX];
+	do{
+	printf("Unesite broj elemenata niza: ");
 	scanf("%d", &n);
-	
-	int A[n];
-	
-	for(i = 0; i < n; i++) {
-		printf("Unesi %d. član: ", i+1);
-		scanf("%d", &A[i]);
+	}while(n<1);
+	for(i=0;i<n;i++)B[i]=0;
+	printf("Unesite clanove niza: \n");
+	for(i=0;i<n;i++){
+		printf("A[%d]=", i);
+		scanf("%f", &A[i]);
 	}
-	
-	for(i = 0; i < n; i++)
-		if(m == A[i]) {
-			m++;
-			i = 0;
-		}
-		
-	for(i = 0; i < n; i++)
-		for(j = i+1; j < n; j++)
-			if(A[i] == A[j])
-				A[j] = m;
-				
-	int s = n;
-	
-	for(i = 0; i < n; i++)
-		if(A[i] == m)
-			s--;
-	
-	printf("Broj različitih članova u nizu: %d\n", s);
-	
+	for(i=0;i<n;i++)for(j=0;j<n;j++)if(A[i]==A[j]){
+		B[i]+=1;
+		printf("%d\n", B[i]);
+	}
+	for(i=0;i<n;i++)if(B[i]==1)k++;
+	printf("Broj razlicitih elemenata niza je %d \n", k);
 	return 0;
-}		
+}
