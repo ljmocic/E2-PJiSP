@@ -1,7 +1,7 @@
 #include<stdio.h>
 #define MAX 30
 int main(){
-    int t[MAX],n,i,c[MAX],x,S=0;
+    int t[MAX],n,i,S=0;
     printf("Unesite broj kupaca: ");
     scanf("%d",&n);
     for(i=0;i<n;i++){
