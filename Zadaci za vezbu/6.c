@@ -1,53 +1,23 @@
 #include<stdio.h>
-int main()
-{
-	int i,n,pom,j;
-	
-	while(1) {
-		
-		printf("Unesi broj elemenata niza : ");
-		scanf("%d",&n);
-		
-		if (n<=0)
-		{
-			printf("\n\nNe moze tako. Bye Bye!!!  \n");
-			break;
-		}
+#define MAX 30
 
-	
-	int niz[n];
-	
-	printf("Unesi redom clanove niza : \n");
+int main(){
+	float A[MAX],t;
+	int i,j,n;
+	printf("Unesite broj clanova niza: ");
+	scanf("%d", &n);
+	printf("Unesite clanove niza: \n");
 	for(i=0;i<n;i++){
-		printf("niz[%d] = ",i);
-		scanf("%d",&niz[i]);
-	}
-	
-	printf("\n");
-	
-	printf("Prvobitan niz : \n");
-	
-	for(i=0;i<n;i++)
-		printf("%d ",niz[i]);
-		
-		printf("\n\n");
-	
+		printf("A[%d]=", i);
+		scanf("%f", &A[i]);
+	}	
 	j=n-1;
-	
-	for(i=0;i<(n/2);i++)
-	{
-		pom=niz[i];
-		niz[i]=niz[j];
-		niz[j]=pom;
+	for(i=0;i<n/2;i++){
+		t=A[i];
+		A[i]=A[j];
+		A[j]=t;
 		j--;
 	}
-	printf("Obradjeni niz : \n");	
-		for(i=0;i<n;i++)
-		printf("%d ",niz[i]);
-		
-		printf("\n\n");
-		
-	}
-		
-		return 0;
+	for(i=0;i<n;i++)printf("A[%d]=%f\n", i,A[i]);
+	return 0;
 }
