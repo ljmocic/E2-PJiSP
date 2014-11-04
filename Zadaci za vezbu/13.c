@@ -25,7 +25,7 @@ int minIntervala(int A[], int poc,int kraj){
 }
 
 int main(){
-	int A[MAX],i,n,maxI,minI,c,d,max,min;
+	int A[MAX],i,n,c,d,max,min;
 	printf("Unesite n: ");
 	scanf("%d",&n);
 	printf("Unesite clanove niza:\n");
