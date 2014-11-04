@@ -2,23 +2,24 @@
 #define MAX 30
 
 int main(){
-	float A[MAX],S=0;
-	int n,i,j,k=0,B[MAX];
+	float A[MAX],t;
+	int i,j,n;
 	do{
-	printf("Unesite broj elemenata niza: ");
+	printf("Unesite broj clanova niza: ");
 	scanf("%d", &n);
-	}while(n<1);
-	for(i=0;i<n;i++)B[i]=0;
 	printf("Unesite clanove niza: \n");
 	for(i=0;i<n;i++){
 		printf("A[%d]=", i);
 		scanf("%f", &A[i]);
+	}	
+	j=n-1;
+	for(i=0;i<n/2;i++){
+		t=A[i];
+		A[i]=A[j];
+		A[j]=t;
+		j--;
 	}
-	for(i=0;i<n;i++)for(j=0;j<n;j++)if(A[i]==A[j]){
-		B[i]+=1;
-		printf("%d\n", B[i]);
-	}
-	for(i=0;i<n;i++)if(B[i]==1)k++;
-	printf("Broj razlicitih elemenata niza je %d \n", k);
+	for(i=0;i<n;i++)printf("A[%d]=%f\n", i,A[i]);
+	}while(n>1);
 	return 0;
 }
