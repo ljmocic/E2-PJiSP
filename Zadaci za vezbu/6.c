@@ -4,6 +4,7 @@
 int main(){
 	float A[MAX],t;
 	int i,j,n;
+	do{
 	printf("Unesite broj clanova niza: ");
 	scanf("%d", &n);
 	printf("Unesite clanove niza: \n");
@@ -19,5 +20,6 @@ int main(){
 		j--;
 	}
 	for(i=0;i<n;i++)printf("A[%d]=%f\n", i,A[i]);
+	}while(n>1);
 	return 0;
 }
