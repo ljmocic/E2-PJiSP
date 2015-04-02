@@ -16,5 +16,5 @@
             R++;
         }
     }
-    printf("Rezultat je: %d", R);
+    printf("Rezultat je: %d \n", R);
 }
