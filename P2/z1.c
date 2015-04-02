@@ -10,5 +10,5 @@ int main(){
     scanf("%f", &c);
     printf("Vrednost aritmeticke sredine je: %.2f \n", R=(a+b+c)/3);
     printf("Vrednost harmonijske sredine je: %.2f \n", R=3/(1/a+1/b+1/c));//geometrijsku i kvadratnu mozete sami, ista fora, druga formula
-	return 0;
+    return 0;
 }
