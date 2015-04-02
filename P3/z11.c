@@ -12,9 +12,9 @@ int main()
     for(i=0;i<n-1;i++)
         for(j=i+1;j<n;j++)
             if(x[i]>x[j]){
-            t=x[i];
-            x[i]=x[j];
-            x[j]=t;
+                t=x[i];
+                x[i]=x[j];
+                x[j]=t;
             }
     printf("Sortirani niz je:\n");
     for(i=0;i<n;i++)printf("x[%d]=%.2f\n",i,x[i]);
