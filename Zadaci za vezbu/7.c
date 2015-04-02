@@ -1,4 +1,3 @@
-// Ovako nesto nece biti ali eto cisto ko voli malo kommplikovanije stvari
 #include <stdio.h>
 int main ()
 {
