@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(){
-    float R,x;
+    float R, x;
     printf("Unesite broj x: ");
     scanf("%f", &x);
     if(x<0)R=-7;

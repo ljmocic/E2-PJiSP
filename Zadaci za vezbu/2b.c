@@ -10,12 +10,12 @@ int fakt(int n){
 
 int main()
 {
-    int n,i,j,k;
-    float x,S=0.0,P1=0.0,P2=0.0;
+    int n, i, j, k;
+    float x,S=0.0, P1=0.0, P2=0.0;
     printf("Unesi pozitivan ceo broj : ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     printf("Unesi realan broj x: ");
-    scanf("%f",&x);
+    scanf("%f", &x);
     for (i=1;i<=n;i++){
         for (j=1;j<=n;j++){
                 k=2*i+1;

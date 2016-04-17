@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sumacif(int n)
-{
+int sumacif(int n){
 	if (n<0) sumacif(-n);
-	else
-	{
+	else{
 		int sum;
-		if (n<10) return n;
-		else {
+		if(n<10) return n;
+		else{
 			sum=n%10+sumacif(n/10);
 			return sum;
 		}

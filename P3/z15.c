@@ -12,16 +12,16 @@ int main()
     int brojClanova, i;
     double niz[MAX], prosek = 0, najbliziClanProseku, razlika;
 
-    do {
+    do{
         printf("Upisite koliko clanova zelite niz da sadrzi. MAX je 20 \n");
         scanf("%d", &brojClanova);
-    } while (brojClanova <=0 || brojClanova > MAX); /// Ova petlja se ponavlja sve dok korisnik ne ispostuje pravilo koje smo zadali, da niz moze imati MAX 20 elementa
+    }while(brojClanova <=0 || brojClanova > MAX); /// Ova petlja se ponavlja sve dok korisnik ne ispostuje pravilo koje smo zadali, da niz moze imati MAX 20 elementa
 
    for (i = 0; i < brojClanova; i++){
-    printf("Upisite %d. clan niza: ", i);
-    scanf("%lf", &niz[i]);
-    printf("\n");
-    prosek += niz[i];
+       printf("Upisite %d. clan niza: ", i);
+       scanf("%lf", &niz[i]);
+       printf("\n");
+       prosek += niz[i];
    }
     /// for petlja za unos clanova u niz
     /// prosek sabira sve clanove niz, posle delimo sa brojClanova kako bi dobili PROSEK
@@ -39,10 +39,8 @@ int main()
     Zasto ovo radimo? Da bi izbegli vrednosti manje od nule, neki brojevi niza
     su iznad proseka a neki ispod */
 
-    for ( i = 1; i < brojClanova; i++)
-    {
-        if (razlika > abs(niz[i] - prosek))
-        {
+    for ( i = 1; i < brojClanova; i++){
+        if (razlika > abs(niz[i] - prosek)){
             razlika = abs(niz[i] - prosek);
             najbliziClanProseku = niz[i];
             indexNajblizegClana = i;

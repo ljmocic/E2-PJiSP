@@ -3,10 +3,10 @@
 
 int main()
 {
-    int n,i;
-    float k,S=1.0,P=0.0;
+    int n, i;
+    float k, S=1.0, P=0.0;
     printf("Unesi pozitivan ceo broj : ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     k=sqrt(2);
     for (i=1;i<=n;i++){
         S=S*1/k;

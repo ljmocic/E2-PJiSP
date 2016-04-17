@@ -3,10 +3,10 @@
 
 int main()
 {
-    int n,i,j,k=-1;
-    float S=1,P1=0.0,P2=0.0;
+    int n, i, j, k=-1;
+    float S=1, P1=0.0, P2=0.0;
     printf("Unesi pozitivan ceo broj : ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     for (i=1;i<=n;i++){
         for(j=1;j<=n;j++){
                 P1+=cos(i);

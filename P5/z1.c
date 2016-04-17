@@ -1,5 +1,5 @@
 /*
-Učitati niz tačaka u ravni (maksimalno 30). Naći tačku koja je najbliža koordinatnom početku. Koristiti funkcije. 
+Učitati niz tačaka u ravni (maksimalno 30). Naći tačku koja je najbliža koordinatnom početku. Koristiti funkcije.
 */
 #include<stdio.h>
 #include<math.h>
@@ -22,12 +22,11 @@ int main(){
 	}
 	min=abs(t1[0].x-t1[0].y);
 	for(i=1;i<n;i++){
-		if(abs(t1[i].x-t1[i].y)<min)
-			{
+		if(abs(t1[i].x-t1[i].y)<min){
 				min=abs(t1[i].x-t1[i].y);
 				r=i;
 			}
-		
+
 	}
 	printf("Najbliza tacka koordinatnom sistemu je %d sa koordinatama %d %d\n",r,t1[r].x,t1[r].y);
 	return 0;

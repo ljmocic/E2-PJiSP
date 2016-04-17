@@ -9,7 +9,7 @@ int ispis(int a, char *s,int k){
 	int i;
 	int b=k-a;
 	printf("String je:");
-	for(i=b;i<=k;i++)printf("%c",s[i]);
+	for(i=b;i<=k;i++) printf("%c",s[i]);
 	printf("\n");
 }
 

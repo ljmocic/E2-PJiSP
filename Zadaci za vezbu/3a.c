@@ -1,10 +1,9 @@
 #include<stdio.h>
 #include<math.h>
 
-int main()
-{
-    int n,i,j,k;
-    float S=10.0,P=0.0;
+int main(){
+    int n, i, j, k;
+    float S=10.0, P=0.0;
     do{
     printf("Unesi pozitivan ceo broj: ");
     scanf("%d",&n);
