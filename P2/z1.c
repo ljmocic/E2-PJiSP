@@ -2,8 +2,7 @@
 #include<math.h>
 
 int main(){
-    float a,b,c,x;
-    float R;
+    float a, b, c, x, R;
     printf("Unesite tri celobrojna broja: \n");
     scanf("%f", &a);
     scanf("%f", &b);
