@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(){
-    float a,b,c,s,P;
+    float a, b, c, s, P;
     printf("Unesite stranice trougla: \n");
     scanf("%f",&a);
     scanf("%f",&b);
